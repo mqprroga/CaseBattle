@@ -11,17 +11,17 @@ import shutil
 from tempfile import NamedTemporaryFile
 from datetime import datetime
 
-bot = telebot.TeleBot(os.getenv('TOKEN'))
+bot = telebot.TeleBot()
 DATA_FILE = 'user_data.json'
 REFILL_AMOUNT = 100
 REFILL_COOLDOWN = 6 * 60 * 60  
 INITIAL_BALANCE = 250  
 BACKUP_DIR = 'backups'
 os.makedirs(BACKUP_DIR, exist_ok=True)
-ADMIN_USERNAME = "mqproga"  
+ADMIN_USERNAME = ""  
 WITHDRAW_RATE = 0.00005  
 MIN_WITHDRAW = 1000  
-ADMIN_CHAT_ID = '2103978046'  
+ADMIN_CHAT_ID = ''  
 
 collectible_items = [
     {"name": "Кинжал Лунный Свет", "price": 1200000, "emoji": "🌙"},  
